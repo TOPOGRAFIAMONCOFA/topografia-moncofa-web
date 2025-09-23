@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TOPOGRAFÍA MONCOFA — Servicios de topografía</title>
-  <meta name="description" content="Levantamientos, deslindes, replanteos y VGA/RGA para Catastro en Valencia y Castellón.">
+  <meta name="description" content="Levantamientos, deslindes, replanteos y VGA/RGA para Catastro en Valencia y Castellón. Certificados de eficiencia energética.">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tipografía Poppins -->
@@ -13,21 +13,21 @@
     body { font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
   </style>
 
-  <!-- Favicon genérico; si tienes uno del logo, cámbialo aquí -->
+  <!-- Favicon genérico -->
   <link rel="icon" href="favicon.svg">
-  <!-- (Opcional) Social preview -->
+  <!-- Social preview (ajusta si usas SVG) -->
   <meta property="og:image" content="logo-moncofa.png">
 </head>
 <body class="bg-slate-50 text-slate-800">
   <!-- Header con logo, sombra y opacado en scroll -->
   <header id="siteHeader" class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200 shadow-sm transition-colors">
-    <div class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
+    <div class="mx-auto max-w-5xl px-4 py-2 md:py-3 flex items-center justify-between gap-3">
       <!-- LOGO -->
       <a href="#" class="flex items-center gap-3" aria-label="Inicio — Topografía Moncofa">
         <!-- Usa .svg si lo tienes: src="logo-moncofa.svg" -->
-       <img src="logo-moncofa.png"
-     alt="Logotipo Topografía Moncofa"
-     class="h-24 sm:h-28 md:h-32 lg:h-40 w-auto shrink-0">
+        <img src="logo-moncofa.png"
+             alt="Logotipo Topografía Moncofa"
+             class="h-24 sm:h-28 md:h-32 lg:h-40 w-auto shrink-0">
       </a>
 
       <nav class="hidden md:flex gap-3 text-sm">
@@ -106,9 +106,11 @@
         <div class="font-semibold text-lg">Replanteos de obra</div>
         Ejes, rasantes, firmes, redes, as-built y certificaciones.
       </div>
+      <!-- Sustituye "Auscultación y cubicaciones" por Certificados -->
       <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Auscultación y cubicaciones</div>
-        Movimiento de tierras, deformaciones y control periódico.
+        <div class="font-semibold text-lg">Certificados de eficiencia energética</div>
+        Visita in situ, toma de datos de envolvente e instalaciones, cálculo con software reconocido y
+        entrega de <strong>certificado + etiqueta (A–G)</strong> en PDF. (Opcional) tramitación y <strong>registro autonómico</strong>.
       </div>
       <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
         <div class="font-semibold text-lg">Escáner 3D y dron</div>
@@ -141,6 +143,76 @@
           <li>Certificación/nota simple registral (si procede)</li>
           <li>Autorizaciones de colindantes (si hay deslinde)</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICADOS ENERGÉTICOS (sección específica) -->
+  <section id="certificados" class="bg-white">
+    <div class="mx-auto max-w-5xl px-4 py-16 grid md:grid-cols-2 gap-10 items-start">
+      <!-- Texto principal -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Certificados de eficiencia energética</h2>
+        <p class="text-slate-600 text-sm">
+          Emitimos el <strong>certificado energético</strong> para viviendas, locales y oficinas, con
+          <strong>visita in situ</strong>, cálculo con software reconocido y <strong>etiqueta energética (A–G)</strong>.
+          Opcionalmente gestionamos el <strong>registro autonómico</strong> a tu nombre.
+        </p>
+
+        <div class="mt-6 grid gap-3 text-sm">
+          <div class="bg-slate-50 border rounded-3xl p-4">
+            <div class="font-semibold">¿Cuándo es obligatorio?</div>
+            <ul class="list-disc pl-5 space-y-1 text-slate-600">
+              <li>En <strong>ventas</strong> y <strong>alquileres</strong> (inmuebles existentes).</li>
+              <li>En anuncios/portales debe mostrarse la <strong>letra</strong> obtenida.</li>
+            </ul>
+          </div>
+
+          <div class="bg-slate-50 border rounded-3xl p-4">
+            <div class="font-semibold">Qué incluye</div>
+            <ul class="list-disc pl-5 space-y-1 text-slate-600">
+              <li>Visita y toma de datos (envolvente, instalaciones).</li>
+              <li>Cálculo con herramienta reconocida y <strong>certificado + etiqueta</strong> en PDF.</li>
+              <li>Asesoramiento de <strong>mejoras</strong> (medidas pasivas/activas).</li>
+              <li>(Opcional) Tramitación y <strong>registro autonómico</strong>.*</li>
+            </ul>
+            <p class="text-xs text-slate-500 mt-2">*Las tasas de registro, si las hubiera, se abonan aparte.</p>
+          </div>
+
+          <div class="flex gap-3 mt-2">
+            <a href="#contacto" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">
+              Solicitar certificado
+            </a>
+            <a href="https://wa.me/34639333493?text=Hola%2C%20quiero%20un%20certificado%20energ%C3%A9tico"
+               class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards laterales -->
+      <div class="grid gap-4">
+        <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow text-sm">
+          <div class="font-semibold mb-1">Documentación habitual</div>
+          <ul class="list-disc pl-5 space-y-1 text-slate-600">
+            <li>Dirección y <strong>referencia catastral</strong>.</li>
+            <li>Superficie útil y uso (vivienda, local, oficina).</li>
+            <li>Planos o croquis (si los tienes) y año de construcción.</li>
+            <li>Facturas/hojas técnicas de caldera, A/A o ACS (si procede).</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow text-sm">
+          <div class="font-semibold mb-1">Proceso</div>
+          <ol class="list-decimal pl-5 space-y-1 text-slate-600">
+            <li>Visita y toma de datos (interior/exterior).</li>
+            <li>Modelado y cálculo de la calificación.</li>
+            <li>Entrega del <strong>certificado + etiqueta</strong> en PDF.</li>
+            <li>(Opcional) Registro autonómico y envío del resguardo.</li>
+          </ol>
+          <p class="text-xs text-slate-500 mt-2">Plazo habitual: 24–72 h desde la visita (según disponibilidad).</p>
+        </div>
       </div>
     </div>
   </section>
@@ -201,3 +273,4 @@
   </script>
 </body>
 </html>
+
