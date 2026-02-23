@@ -555,9 +555,6 @@
       font-size: .75rem; color: var(--gray);
     }
 
-    /* ── SCROLL REVEAL ── */
-    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
 
     /* ── MOBILE ── */
     @media (max-width: 900px) {
@@ -579,8 +576,26 @@
 <!-- HEADER -->
 <header>
   <div class="logo">
-    <span class="logo-main">Ingeniería y Topografía Martí</span>
-    <span class="logo-sub">Castellón · Valencia</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 120" height="52" aria-label="Ingeniería y Topografía Martí">
+      <rect width="580" height="120" fill="transparent"/>
+      <rect x="28" y="22" width="1.5" height="76" fill="#c9a84c"/>
+      <g transform="translate(54, 60)">
+        <line x1="0" y1="-20" x2="0" y2="20" stroke="#c9a84c" stroke-width="1.2"/>
+        <line x1="-20" y1="0" x2="20" y2="0" stroke="#c9a84c" stroke-width="1.2"/>
+        <circle cx="0" cy="0" r="16" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+        <circle cx="0" cy="0" r="3.5" fill="#c9a84c"/>
+        <line x1="0" y1="-20" x2="0" y2="-24" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="0" y1="20" x2="0" y2="24" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="20" y1="0" x2="24" y2="0" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="-20" y1="0" x2="-24" y2="0" stroke="#c9a84c" stroke-width="1.5"/>
+      </g>
+      <rect x="92" y="22" width="1" height="76" fill="#c9a84c" opacity="0.35"/>
+      <text x="110" y="52" font-family="'Playfair Display', Georgia, serif" font-size="17" font-weight="400" fill="#c9a84c" letter-spacing="4">INGENIERÍA Y TOPOGRAFÍA</text>
+      <rect x="110" y="60" width="444" height="1" fill="#c9a84c" opacity="0.6"/>
+      <text x="108" y="95" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff" letter-spacing="8">MARTÍ</text>
+      <text x="111" y="110" font-family="Georgia, serif" font-size="8.5" font-weight="400" fill="#8a9ab0" letter-spacing="3.5">CASTELLÓN · VALENCIA</text>
+      <rect x="550" y="22" width="1.5" height="76" fill="#c9a84c"/>
+    </svg>
   </div>
   <nav id="main-nav">
     <a href="#servicios">Servicios</a>
@@ -600,7 +615,7 @@
   <div class="hero-grid"></div>
   <div class="hero-circle"></div>
 
-  <div class="hero-content reveal">
+  <div class="hero-content">
     <div class="hero-eyebrow">Ingeniería · Topografía</div>
     <h1>
       Soluciones técnicas precisas para <em>Castellón</em> y Valencia
@@ -614,7 +629,7 @@
     </div>
   </div>
 
-  <div class="hero-stats reveal">
+  <div class="hero-stats">
     <div>
       <div class="stat-num">+25</div>
       <div class="stat-label">Años de experiencia</div>
@@ -636,13 +651,13 @@
 
 <!-- SERVICIOS -->
 <section id="servicios">
-  <div class="section-eyebrow reveal">Qué hacemos</div>
-  <h2 class="reveal">Servicios de ingeniería y topografía<br>en Castellón y Valencia</h2>
-  <p class="section-intro reveal">
+  <div class="section-eyebrow">Qué hacemos</div>
+  <h2 class="">Servicios de ingeniería y topografía<br>en Castellón y Valencia</h2>
+  <p class="section-intro">
     Ofrecemos soluciones técnicas completas para particulares, inmobiliarias, constructoras y administraciones. Entrega rápida, precios transparentes y atención personalizada.
   </p>
 
-  <div class="services-grid reveal">
+  <div class="services-grid">
 
     <div class="service-card">
       <span class="service-icon">📐</span>
@@ -711,7 +726,30 @@
       <a href="#contacto" class="service-detail">Pedir presupuesto</a>
       <div class="zone-tags">
         <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Valencia</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🏡</span>
+      <h3>Legalización de expedientes de obras en suelo rural</h3>
+      <p>¿Has recibido un requerimiento del Ayuntamiento o de la AVPT por una obra en suelo no urbanizable? Te ayudamos a analizar el expediente y preparar toda la documentación técnica para regularizarla: memoria descriptiva y constructiva, memoria agronómica, planos as-built, mediciones y anexos. Casetas, porches, cobertizos, cerramientos, trasteros, soleras, piscinas y ampliaciones. También subsanaciones, escritos técnicos de apoyo para contestar requerimientos y acompañamiento completo en la tramitación.</p>
+      <a href="#contacto" class="service-detail">Consultar caso</a>
+      <div class="zone-tags">
         <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Valencia</span>
+        <span class="zone-tag">AVPT</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">⚖️</span>
+      <h3>Informes técnicos de expropiación y valoración de fincas</h3>
+      <p>Informes especializados para expedientes de expropiación, valoración de finca, ocupación de terrenos y discrepancias con la Administración. Incluyen análisis detallado de afecciones y superficies ocupadas, comprobación de planos, ortofotos, deslindes y cartografía oficial, cálculo exacto de superficies expropiadas y justificadas, y argumentación técnica para alegaciones en defensa de los intereses del propietario.</p>
+      <a href="#contacto" class="service-detail">Solicitar informe</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Valencia</span>
       </div>
     </div>
 
@@ -720,12 +758,12 @@
 
 <!-- COBERTURA GEOGRÁFICA -->
 <section id="cobertura">
-  <div class="section-eyebrow reveal">Zona de actuación</div>
-  <h2 class="reveal">¿Trabajáis en mi municipio?</h2>
-  <p class="section-intro reveal" style="margin: 0 auto 3rem; text-align: center;">
+  <div class="section-eyebrow">Zona de actuación</div>
+  <h2 class="">¿Trabajáis en mi municipio?</h2>
+  <p class="section-intro" style="margin: 0 auto 3rem; text-align: center;">
     Operamos en toda la provincia de Castellón y norte de Valencia. Estos son los municipios donde actuamos habitualmente:
   </p>
-  <div class="cobertura-grid reveal">
+  <div class="cobertura-grid">
     <span class="cobertura-item principal">Moncofa</span>
     <span class="cobertura-item principal">Nules</span>
     <span class="cobertura-item principal">Castellón de la Plana</span>
@@ -747,7 +785,7 @@
 
 <!-- NOSOTROS -->
 <section id="nosotros">
-  <div class="nosotros-text reveal">
+  <div class="nosotros-text">
     <div class="section-eyebrow">Quiénes somos</div>
     <h2>Ingenieros colegiados con más de 25 años de experiencia</h2>
     <p class="nosotros-body">
@@ -787,7 +825,7 @@
     </div>
   </div>
 
-  <div class="nosotros-visual reveal">
+  <div class="nosotros-visual">
     <div class="nosotros-box">
       <div class="badge-25">
         <span class="big">+25</span>
@@ -803,11 +841,11 @@
 
 <!-- PROCESO -->
 <section id="proceso">
-  <div class="section-eyebrow reveal">Cómo trabajamos</div>
-  <h2 class="reveal">Proceso simple y transparente</h2>
-  <p class="section-intro reveal">Sin sorpresas. Sabéis en todo momento qué está pasando con vuestro encargo.</p>
+  <div class="section-eyebrow">Cómo trabajamos</div>
+  <h2 class="">Proceso simple y transparente</h2>
+  <p class="section-intro">Sin sorpresas. Sabéis en todo momento qué está pasando con vuestro encargo.</p>
 
-  <div class="proceso-steps reveal">
+  <div class="proceso-steps">
     <div class="paso">
       <div class="paso-num">01</div>
       <h4>Consulta y presupuesto</h4>
@@ -833,7 +871,7 @@
 
 <!-- CERTIFICADO ENERGÉTICO DETALLE -->
 <section id="certificado">
-  <div class="cert-text reveal">
+  <div class="cert-text">
     <div class="section-eyebrow">Obligatorio en ventas y alquileres</div>
     <h2>Certificado de eficiencia energética en Castellón</h2>
     <p style="color: var(--gray); font-size: .95rem; line-height: 1.7; margin-bottom: 1.5rem;">
@@ -851,7 +889,7 @@
     <a href="https://wa.me/34639333493?text=Hola%2C%20quiero%20un%20certificado%20energ%C3%A9tico" class="btn-primary">Pedir certificado por WhatsApp</a>
   </div>
 
-  <div class="cert-labels reveal">
+  <div class="cert-labels">
     <div class="cert-bar cert-A"><span class="letra">A</span> Muy alta eficiencia <span class="arrow">▶▶▶▶▶▶▶</span></div>
     <div class="cert-bar cert-B"><span class="letra">B</span> Alta eficiencia <span class="arrow">▶▶▶▶▶▶</span></div>
     <div class="cert-bar cert-C"><span class="letra">C</span> Buena eficiencia <span class="arrow">▶▶▶▶▶</span></div>
@@ -864,11 +902,11 @@
 
 <!-- CONTACTO -->
 <section id="contacto">
-  <div class="section-eyebrow reveal">Contactar</div>
-  <h2 class="reveal">Solicita presupuesto sin compromiso</h2>
+  <div class="section-eyebrow">Contactar</div>
+  <h2 class="">Solicita presupuesto sin compromiso</h2>
   <div class="contacto-grid">
 
-    <div class="contacto-info reveal">
+    <div class="contacto-info">
       <h3>Hablemos de tu proyecto</h3>
       <p>Cuéntanos qué necesitas y te damos respuesta el mismo día. Atendemos por teléfono, WhatsApp o formulario.</p>
 
@@ -884,7 +922,7 @@
           <div class="contacto-item-icon">✉️</div>
           <div class="contacto-item-text">
             <strong>Email</strong>
-            <a href="mailto:jmartimarti@telefonica.net">jmartimarti@telefonica.net</a>
+            <a href="/cdn-cgi/l/email-protection#056f686477716c686477716c4571606960636a6b6c66642b6b6071"><span class="__cf_email__" data-cfemail="355f585447415c585447415c7541505950535a5b5c56541b5b5041">[email&#160;protected]</span></a>
           </div>
         </div>
         <div class="contacto-item">
@@ -909,7 +947,7 @@
       </a>
     </div>
 
-    <form class="contacto-form reveal" onsubmit="handleForm(event)">
+    <form class="contacto-form" onsubmit="handleForm(event)">
       <div class="form-row">
         <div class="form-group">
           <label for="nombre">Nombre *</label>
@@ -929,6 +967,8 @@
         <select id="servicio">
           <option value="">Selecciona un servicio...</option>
           <option>Informe técnico de ingeniería</option>
+          <option>Informe de expropiación / valoración de finca</option>
+          <option>Legalización de obras en suelo rural</option>
           <option>Validación gráfica / RGA catastral</option>
           <option>Levantamiento topográfico</option>
           <option>Deslinde o replanteo</option>
@@ -959,8 +999,26 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="logo">
-        <span class="logo-main">Ingeniería y Topografía Martí</span>
-        <span class="logo-sub">Castellón · Valencia</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 120" height="44" aria-label="Ingeniería y Topografía Martí">
+          <rect width="580" height="120" fill="transparent"/>
+          <rect x="28" y="22" width="1.5" height="76" fill="#c9a84c"/>
+          <g transform="translate(54, 60)">
+            <line x1="0" y1="-20" x2="0" y2="20" stroke="#c9a84c" stroke-width="1.2"/>
+            <line x1="-20" y1="0" x2="20" y2="0" stroke="#c9a84c" stroke-width="1.2"/>
+            <circle cx="0" cy="0" r="16" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+            <circle cx="0" cy="0" r="3.5" fill="#c9a84c"/>
+            <line x1="0" y1="-20" x2="0" y2="-24" stroke="#c9a84c" stroke-width="1.5"/>
+            <line x1="0" y1="20" x2="0" y2="24" stroke="#c9a84c" stroke-width="1.5"/>
+            <line x1="20" y1="0" x2="24" y2="0" stroke="#c9a84c" stroke-width="1.5"/>
+            <line x1="-20" y1="0" x2="-24" y2="0" stroke="#c9a84c" stroke-width="1.5"/>
+          </g>
+          <rect x="92" y="22" width="1" height="76" fill="#c9a84c" opacity="0.35"/>
+          <text x="110" y="52" font-family="'Playfair Display', Georgia, serif" font-size="17" font-weight="400" fill="#c9a84c" letter-spacing="4">INGENIERÍA Y TOPOGRAFÍA</text>
+          <rect x="110" y="60" width="444" height="1" fill="#c9a84c" opacity="0.6"/>
+          <text x="108" y="95" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#ffffff" letter-spacing="8">MARTÍ</text>
+          <text x="111" y="110" font-family="Georgia, serif" font-size="8.5" font-weight="400" fill="#8a9ab0" letter-spacing="3.5">CASTELLÓN · VALENCIA</text>
+          <rect x="550" y="22" width="1.5" height="76" fill="#c9a84c"/>
+        </svg>
       </div>
       <p>Más de 25 años de experiencia al servicio de particulares, inmobiliarias y empresas en la Comunitat Valenciana.</p>
     </div>
@@ -973,7 +1031,7 @@
     </div>
     <div class="footer-links">
       <a href="tel:+34639333493">📞 639 333 493</a>
-      <a href="mailto:jmartimarti@telefonica.net">✉️ jmartimarti@telefonica.net</a>
+      <a href="/cdn-cgi/l/email-protection#adc7c0ccdfd9c4c0ccdfd9c4edd9c8c1c8cbc2c3c4cecc83c3c8d9">✉️ <span class="__cf_email__" data-cfemail="cea4a3afbcbaa7a3afbcbaa78ebaaba2aba8a1a0a7adafe0a0abba">[email&#160;protected]</span></a>
       <a href="https://wa.me/34639333493">💬 WhatsApp</a>
     </div>
   </div>
@@ -983,15 +1041,19 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(el => {
-      if (el.isIntersecting) { el.target.classList.add('visible'); }
+  function checkReveal() {
+    revealEls.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 20) { el.classList.add('visible'); }
     });
-  }, { threshold: 0.1 });
-  revealEls.forEach(el => observer.observe(el));
+  }
+  window.addEventListener('scroll', checkReveal);
+  // Activar al cargar
+  setTimeout(checkReveal, 100);
+  checkReveal();
 
   // Mobile menu
   function toggleMenu() {
@@ -1002,17 +1064,4 @@
   // Form (demo — conectar con Formspree o similar)
   function handleForm(e) {
     e.preventDefault();
-    document.getElementById('form-success').style.display = 'block';
-    e.target.reset();
-    // Para activar: reemplaza el action del form con tu endpoint de Formspree
-    // <form action="https://formspree.io/f/XXXXXXX" method="POST">
-  }
-
-  // Header shrink on scroll
-  window.addEventListener('scroll', () => {
-    const h = document.querySelector('header');
-    h.style.padding = window.scrollY > 80 ? '.8rem 4%' : '1.2rem 4%';
-  });
-</script>
-</body>
-</html>
+    document.getElementById('form-success').style.display = 
