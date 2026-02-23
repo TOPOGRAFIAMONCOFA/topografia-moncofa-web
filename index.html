@@ -1,269 +1,1018 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TOPOGRAFÍA MONCOFA — Servicios de topografía</title>
-  <meta name="description" content="Levantamientos, deslindes, replanteos y certificados energéticos. Informes de validación gráfica y representación gráfica alternativa para Catastro en Valencia y Castellón.">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Tipografía Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
-  </style>
+  <!-- SEO PRIMARY -->
+  <title>Ingeniería y Topografía Martí | Castellón y Valencia</title>
+  <meta name="description" content="Más de 25 años de experiencia en topografía e ingeniería en Castellón y Valencia. Levantamientos, deslindes, certificados energéticos, informes técnicos y validación gráfica catastral. Presupuesto sin compromiso." />
+  <meta name="keywords" content="topógrafo Castellón, topógrafo Moncofa, certificado energético Castellón, informe técnico Castellón, validación gráfica catastro, deslinde parcela Castellón, ingeniero caminos Castellón, topografía Valencia, topografía Nules, topografía Vall d'Uixó" />
+  <meta name="author" content="Ingeniería y Topografía Martí" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ingenieriamarti.es/" />
 
-  <link rel="icon" href="favicon.svg">
-  <meta property="og:image" content="logo-moncofa.png">
-</head>
-<body class="bg-slate-50 text-slate-800">
-  <!-- Header -->
-  <header id="siteHeader" class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200 shadow-sm transition-colors">
-    <div class="mx-auto max-w-5xl px-4 py-2 md:py-3 flex items-center justify-between gap-3">
-      <a href="#" class="flex items-center gap-3" aria-label="Inicio — Topografía Moncofa">
-        <img src="logo-moncofa.png" alt="Logotipo Topografía Moncofa" class="h-24 sm:h-28 md:h-32 lg:h-40 w-auto shrink-0">
-      </a>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ingeniería y Topografía Martí | Castellón y Valencia" />
+  <meta property="og:description" content="Más de 25 años de experiencia. Topografía, ingeniería, certificados energéticos y validación gráfica catastral en Castellón y Valencia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
 
-      <nav class="hidden md:flex gap-3 text-sm">
-        <a href="#servicios" class="px-2 py-1 rounded-lg hover:bg-slate-100">Servicios</a>
-        <a href="#vga" class="px-2 py-1 rounded-lg hover:bg-slate-100">Validación gráfica y RGA</a>
-        <a href="#contacto" class="px-2 py-1 rounded-lg hover:bg-slate-100">Contacto</a>
-      </nav>
-
-      <div class="flex gap-2">
-        <a href="tel:+34639333493" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">Llamar</a>
-        <a href="https://wa.me/34639333493?text=Hola%2C%20me%20interesa%20un%20servicio%20de%20topograf%C3%ADa" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">WhatsApp</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-100 via-white to-slate-50"></div>
-    <div class="relative mx-auto max-w-5xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl font-extrabold">Servicios de topografía profesional</h1>
-        <p class="mt-4 text-lg text-slate-600">
-          Levantamientos, deslindes, replanteos e
-          <b>Informes de Validación Gráfica y Representación Gráfica Alternativa</b> para Catastro.
-          Entregables listos para obra, Catastro y Registro.
-        </p>
-        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
-          <li>✅ Entrega en 48–72h (trabajos estándar)</li>
-          <li>✅ GNSS RTK · Estación Total · UAV · Escáner 3D</li>
-          <li>✅ Planos DWG/DXF + PDF firmado</li>
-          <li>✅ <b>Profesional colegiado</b></li>
-        </ul>
-        <div class="mt-6 flex gap-3">
-          <a href="#contacto" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">Solicitar presupuesto</a>
-          <a href="#servicios" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">Ver servicios</a>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-slate-200 text-sm">
-        <div class="font-medium text-slate-500 mb-2">Ámbitos de trabajo</div>
-        <div class="grid grid-cols-2 gap-3">
-          <div class="border rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="font-semibold">Urbano</div>
-            <div class="text-xs text-slate-500">Parcelas, solares, edificaciones</div>
-          </div>
-          <div class="border rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="font-semibold">Rústico</div>
-            <div class="text-xs text-slate-500">Fincas, caminos, acequias</div>
-          </div>
-          <div class="border rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="font-semibold">Obra civil</div>
-            <div class="text-xs text-slate-500">Rasantes, firmes, redes</div>
-          </div>
-          <div class="border rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="font-semibold">Catastro/Registro</div>
-            <div class="text-xs text-slate-500">Validación gráfica y RGA, discrepancias</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICIOS -->
-  <section id="servicios" class="mx-auto max-w-5xl px-4 py-16">
-    <h2 class="text-3xl font-bold mb-6">Servicios</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 text-sm text-slate-600">
-      <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Levantamientos</div>
-        Curvas de nivel, MDT/MDS, ortofoto y nubes de puntos (UAV/LiDAR/RTK). Entrega en DWG/DXF, SHP, IFC, LandXML.
-      </div>
-      <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Delimitación y deslindes</div>
-        Replanteo de linderos, segregaciones/agrupaciones, georreferenciación de parcelas y validación catastral (ETRS89/UTM).
-      </div>
-      <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Informes de validación gráfica y representación gráfica alternativa</div>
-        Informes y tramitación para coordinación Catastro–Registro en compraventas, herencias y rectificaciones.
-      </div>
-      <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Replanteos de obra</div>
-        Ejes, rasantes, firmes, redes, as-built y certificaciones.
-      </div>
-      <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Certificados de eficiencia energética</div>
-        Visita in situ, toma de datos de envolvente e instalaciones, cálculo con software reconocido y
-        entrega de <strong>certificado + etiqueta (A–G)</strong> en PDF. (Opcional) tramitación y <strong>registro autonómico</strong>.
-      </div>
-      <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold text-lg">Escáner 3D y dron</div>
-        Escáner terrestre y fotogrametría UAV. Entregables BIM/IFC y gemelo digital.
-      </div>
-    </div>
-  </section>
-
-  <!-- VG / RGA -->
-  <section id="vga" class="bg-white border-y border-slate-200">
-    <div class="mx-auto max-w-5xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-3xl font-bold">Informes de validación gráfica y representación gráfica alternativa</h2>
-        <p class="mt-3 text-slate-600 text-sm">
-          La <b>RGA</b> es la geometría alternativa que propones (GML + plano). La <b>VGA</b> es el visto bueno oficial de Catastro (CSV) a esa geometría.
-          Nos ocupamos de todo el proceso y la coordinación con notaría y registro.
-        </p>
-        <ul class="mt-4 grid sm:grid-cols-2 gap-2 text-sm">
-          <li>📄 Análisis de títulos y cartografía</li>
-          <li>📐 Generación GML INSPIRE y plano</li>
-          <li>🧾 Solicitud de VGA y seguimiento</li>
-          <li>🏛️ Asistencia en notaría/Registro</li>
-        </ul>
-      </div>
-      <div class="border rounded-3xl p-6 text-sm bg-slate-50 shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-medium mb-2">Documentación habitual</div>
-        <ul class="list-disc pl-5 space-y-1">
-          <li>Títulos de propiedad y referencias catastrales</li>
-          <li>Plano firmado y fichero GML</li>
-          <li>Certificación/nota simple registral (si procede)</li>
-          <li>Autorizaciones de colindantes (si hay deslinde)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICADOS ENERGÉTICOS -->
-  <section id="certificados" class="bg-white">
-    <div class="mx-auto max-w-5xl px-4 py-16 grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Certificados de eficiencia energética</h2>
-        <p class="text-slate-600 text-sm">
-          Emitimos el <strong>certificado energético</strong> para viviendas, locales y oficinas, con
-          <strong>visita in situ</strong>, cálculo con software reconocido y <strong>etiqueta energética (A–G)</strong>.
-          Opcionalmente gestionamos el <strong>registro autonómico</strong> a tu nombre.
-        </p>
-
-        <div class="mt-6 grid gap-3 text-sm">
-          <div class="bg-slate-50 border rounded-3xl p-4">
-            <div class="font-semibold">¿Cuándo es obligatorio?</div>
-            <ul class="list-disc pl-5 space-y-1 text-slate-600">
-              <li>En <strong>ventas</strong> y <strong>alquileres</strong> (inmuebles existentes).</li>
-              <li>En anuncios/portales debe mostrarse la <strong>letra</strong> obtenida.</li>
-            </ul>
-          </div>
-
-          <div class="bg-slate-50 border rounded-3xl p-4">
-            <div class="font-semibold">Qué incluye</div>
-            <ul class="list-disc pl-5 space-y-1 text-slate-600">
-              <li>Visita y toma de datos (envolvente, instalaciones).</li>
-              <li>Cálculo con herramienta reconocida y <strong>certificado + etiqueta</strong> en PDF.</li>
-              <li>Asesoramiento de <strong>mejoras</strong> (medidas pasivas/activas).</li>
-              <li>(Opcional) Tramitación y <strong>registro autonómico</strong>.*</li>
-            </ul>
-            <p class="text-xs text-slate-500 mt-2">*Las tasas de registro, si las hubiera, se abonan aparte.</p>
-          </div>
-
-          <div class="flex gap-3 mt-2">
-            <a href="#contacto" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">Solicitar certificado</a>
-            <a href="https://wa.me/34639333493?text=Hola%2C%20quiero%20un%20certificado%20energ%C3%A9tico" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">WhatsApp</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid gap-4">
-        <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow text-sm">
-          <div class="font-semibold mb-1">Documentación habitual</div>
-          <ul class="list-disc pl-5 space-y-1 text-slate-600">
-            <li>Dirección y <strong>referencia catastral</strong>.</li>
-            <li>Superficie útil y uso (vivienda, local, oficina).</li>
-            <li>Planos o croquis (si los tienes) y año de construcción.</li>
-            <li>Facturas/hojas técnicas de caldera, A/A o ACS (si procede).</li>
-          </ul>
-        </div>
-
-        <div class="bg-white border rounded-3xl p-5 shadow-lg hover:shadow-xl transition-shadow text-sm">
-          <div class="font-semibold mb-1">Proceso</div>
-          <ol class="list-decimal pl-5 space-y-1 text-slate-600">
-            <li>Visita y toma de datos (interior/exterior).</li>
-            <li>Modelado y cálculo de la calificación.</li>
-            <li>Entrega del <strong>certificado + etiqueta</strong> en PDF.</li>
-            <li>(Opcional) Registro autonómico y envío del resguardo.</li>
-          </ol>
-          <p class="text-xs text-slate-500 mt-2">Plazo habitual: 24–72 h desde la visita (según disponibilidad).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="bg-slate-100 border-t border-slate-200">
-    <div class="mx-auto max-w-5xl px-4 py-16 grid md:grid-cols-2 gap-10">
-      <div>
-        <h2 class="text-3xl font-bold">Pide presupuesto</h2>
-        <p class="text-slate-600 mt-2 text-sm">
-          Adjunta <strong>ubicación y referencia catastral</strong>, y contactaremos para darte <strong>presupuesto sin compromiso</strong>.
-        </p>
-        <div class="mt-6 grid sm:grid-cols-2 gap-3">
-          <a href="tel:+34639333493" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">📞 Llamar</a>
-          <a href="https://wa.me/34639333493?text=Hola%2C%20me%20interesa%20un%20presupuesto" class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">💬 WhatsApp</a>
-        </div>
-        <div class="mt-6 text-sm text-slate-600">
-          <div class="font-medium">Email</div>
-          <a href="mailto:jmartimarti@telefonica.net" class="underline">jmartimarti@telefonica.net</a>
-          <div class="mt-3 font-medium">Horario</div>
-          <div>L–V 9:00–19:00</div>
-        </div>
-      </div>
-      <div class="bg-white border rounded-3xl p-6 text-sm shadow-lg hover:shadow-xl transition-shadow">
-        <div class="font-semibold mb-2">Formulario (demo)</div>
-        <form onsubmit="event.preventDefault(); alert('Formulario de demostración. Conecta Formspree/Getform para recibir mensajes.');" class="grid gap-3">
-          <input class="w-full border rounded-2xl px-3 py-2 text-sm border-slate-300" placeholder="Nombre" required>
-          <input class="w-full border rounded-2xl px-3 py-2 text-sm border-slate-300" type="email" placeholder="Email" required>
-          <input class="w-full border rounded-2xl px-3 py-2 text-sm border-slate-300" placeholder="Teléfono">
-          <input class="w-full border rounded-2xl px-3 py-2 text-sm border-slate-300" placeholder="Ubicación / Ref. catastral">
-          <textarea class="w-full border rounded-2xl px-3 py-2 text-sm border-slate-300" rows="5" placeholder="Describe el trabajo"></textarea>
-          <button class="px-5 py-3 rounded-2xl shadow-md bg-black text-white text-sm hover:shadow-lg">Enviar (demo)</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-white border-t border-slate-200">
-    <div class="mx-auto max-w-5xl px-4 py-8 text-xs text-slate-500">
-      © <span id="year"></span> TOPOGRAFÍA MONCOFA — Valencia · Castellón
-    </div>
-  </footer>
-
-  <!-- Script: opacar header al hacer scroll + año -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const header = document.getElementById('siteHeader');
-    const onScroll = () => {
-      if (window.scrollY > 8) {
-        header.classList.remove('bg-white/80');
-        header.classList.add('bg-white/95');
-      } else {
-        header.classList.add('bg-white/80');
-        header.classList.remove('bg-white/95');
-      }
-    };
-    document.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+  <!-- Schema.org Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ingeniería y Topografía Martí",
+    "description": "Servicios de topografía e ingeniería con más de 25 años de experiencia en Castellón y Valencia.",
+    "url": "https://ingenieriamarti.es",
+    "telephone": "+34639333493",
+    "email": "jmartimarti@telefonica.net",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Moncofa",
+      "addressRegion": "Castellón",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.8167,
+      "longitude": -0.1333
+    },
+    "areaServed": [
+      "Moncofa", "Nules", "Castellón de la Plana", "La Vall d'Uixó",
+      "Burriana", "Villarreal", "Xilxes", "Almenara", "Sagunto", "Valencia"
+    ],
+    "openingHours": "Mo-Fr 09:00-19:00",
+    "priceRange": "€€",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Ingeniería y Topografía",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Levantamiento topográfico"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Deslinde y replanteo"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Certificado de eficiencia energética"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Validación gráfica y RGA catastral"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Informes técnicos de ingeniería"}}
+      ]
+    }
+  }
   </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0d1f2d;
+      --navy2:  #162840;
+      --gold:   #c9a84c;
+      --gold2:  #e8c97a;
+      --cream:  #f5f0e8;
+      --white:  #ffffff;
+      --gray:   #8a9ab0;
+      --light:  #e8edf3;
+      --ff-head: 'Playfair Display', Georgia, serif;
+      --ff-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--navy);
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 4%;
+      background: rgba(13,31,45,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      transition: padding .3s;
+    }
+
+    .logo {
+      display: flex; flex-direction: column; line-height: 1.1;
+    }
+    .logo-main {
+      font-family: var(--ff-head);
+      font-size: 1.15rem; font-weight: 700;
+      color: var(--white); letter-spacing: .02em;
+    }
+    .logo-sub {
+      font-size: .68rem; font-weight: 300;
+      color: var(--gold); letter-spacing: .15em; text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 2rem; align-items: center; }
+    nav a {
+      color: var(--gray); text-decoration: none;
+      font-size: .85rem; font-weight: 400; letter-spacing: .05em;
+      text-transform: uppercase; transition: color .2s;
+    }
+    nav a:hover { color: var(--gold); }
+
+    .btn-nav {
+      background: var(--gold); color: var(--navy) !important;
+      padding: .5rem 1.2rem; border-radius: 2px;
+      font-weight: 500 !important; transition: background .2s !important;
+    }
+    .btn-nav:hover { background: var(--gold2) !important; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 24px; height: 2px; background: var(--cream); display: block; transition: .3s; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 8rem 4% 5rem;
+      position: relative; overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201,168,76,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(22,40,64,0.8) 0%, transparent 70%),
+        linear-gradient(160deg, #0d1f2d 0%, #162840 50%, #0d1f2d 100%);
+    }
+
+    /* Grid lines decoration */
+    .hero-grid {
+      position: absolute; inset: 0; z-index: 0; opacity: .04;
+      background-image:
+        linear-gradient(var(--gold) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gold) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    /* Animated circle accent */
+    .hero-circle {
+      position: absolute; right: -5%; top: 50%; transform: translateY(-50%);
+      width: 55vw; max-width: 700px; aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(201,168,76,0.12);
+      z-index: 0;
+      animation: spin 60s linear infinite;
+    }
+    .hero-circle::before {
+      content: ''; position: absolute; inset: 15%;
+      border-radius: 50%; border: 1px solid rgba(201,168,76,0.08);
+      animation: spin 40s linear infinite reverse;
+    }
+    @keyframes spin { to { transform: translateY(-50%) rotate(360deg); } }
+
+    .hero-content { position: relative; z-index: 1; max-width: 700px; }
+
+    .hero-eyebrow {
+      font-size: .75rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: .8rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 40px; height: 1px; background: var(--gold);
+    }
+
+    h1 {
+      font-family: var(--ff-head);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900; line-height: 1.1;
+      color: var(--white); margin-bottom: 1.5rem;
+    }
+    h1 em { color: var(--gold); font-style: normal; }
+
+    .hero-desc {
+      font-size: 1.05rem; font-weight: 300; line-height: 1.7;
+      color: var(--gray); max-width: 540px; margin-bottom: 2.5rem;
+    }
+
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--gold); color: var(--navy);
+      padding: .85rem 2rem; border-radius: 2px;
+      font-weight: 500; font-size: .9rem; letter-spacing: .05em;
+      text-decoration: none; text-transform: uppercase;
+      transition: background .2s, transform .15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-2px); }
+
+    .btn-secondary {
+      border: 1px solid rgba(201,168,76,0.4); color: var(--cream);
+      padding: .85rem 2rem; border-radius: 2px;
+      font-weight: 400; font-size: .9rem; letter-spacing: .05em;
+      text-decoration: none; text-transform: uppercase;
+      transition: border-color .2s, color .2s, transform .15s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    .hero-stats {
+      display: flex; gap: 3rem; margin-top: 4rem;
+      padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.08);
+      position: relative; z-index: 1;
+    }
+    .stat-num {
+      font-family: var(--ff-head); font-size: 2.2rem; font-weight: 700;
+      color: var(--gold); line-height: 1;
+    }
+    .stat-label { font-size: .75rem; color: var(--gray); margin-top: .3rem; letter-spacing: .05em; }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 6rem 4%; }
+
+    .section-eyebrow {
+      font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: .8rem;
+      display: flex; align-items: center; gap: .8rem;
+    }
+    .section-eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+
+    h2 {
+      font-family: var(--ff-head);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700; color: var(--white); line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .section-intro {
+      font-size: 1rem; color: var(--gray); line-height: 1.7;
+      max-width: 580px; margin-bottom: 3.5rem;
+    }
+
+    /* ── SERVICIOS ── */
+    #servicios { background: var(--navy2); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .service-card {
+      background: var(--navy2);
+      padding: 2.5rem 2rem;
+      transition: background .25s;
+      position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute;
+      bottom: 0; left: 0; right: 0; height: 3px;
+      background: var(--gold); transform: scaleX(0); transform-origin: left;
+      transition: transform .3s;
+    }
+    .service-card:hover { background: rgba(22,40,64,0.8); }
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-icon {
+      font-size: 2rem; margin-bottom: 1.2rem;
+      display: block;
+    }
+
+    .service-card h3 {
+      font-family: var(--ff-head); font-size: 1.2rem; font-weight: 700;
+      color: var(--white); margin-bottom: .8rem;
+    }
+
+    .service-card p {
+      font-size: .88rem; color: var(--gray); line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .service-detail {
+      font-size: .78rem; color: var(--gold);
+      letter-spacing: .08em; text-transform: uppercase;
+      text-decoration: none;
+      display: flex; align-items: center; gap: .4rem;
+    }
+    .service-detail::after { content: '→'; transition: transform .2s; }
+    .service-detail:hover::after { transform: translateX(4px); }
+
+    /* Tags de zona */
+    .zone-tags {
+      display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem;
+    }
+    .zone-tag {
+      font-size: .7rem; padding: .25rem .7rem;
+      border: 1px solid rgba(201,168,76,0.25);
+      color: var(--gray); border-radius: 20px; letter-spacing: .05em;
+    }
+
+    /* ── ZONA DE COBERTURA ── */
+    #cobertura {
+      background: var(--navy);
+      text-align: center;
+    }
+    #cobertura .section-eyebrow { justify-content: center; }
+    #cobertura .section-eyebrow::before { display: none; }
+
+    .cobertura-grid {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: .7rem; max-width: 750px; margin: 0 auto;
+    }
+
+    .cobertura-item {
+      padding: .6rem 1.4rem;
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 2px; font-size: .85rem; color: var(--cream);
+      background: rgba(201,168,76,0.04);
+      transition: border-color .2s, color .2s;
+    }
+    .cobertura-item:hover { border-color: var(--gold); color: var(--gold); }
+    .cobertura-item.principal {
+      border-color: var(--gold); color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+
+    /* ── NOSOTROS ── */
+    #nosotros {
+      background: var(--navy2);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    }
+
+    .nosotros-text .section-eyebrow { margin-bottom: 1rem; }
+
+    .nosotros-body {
+      font-size: .95rem; color: var(--gray); line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .nosotros-features { display: flex; flex-direction: column; gap: 1rem; }
+
+    .feature-item {
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .feature-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; border-radius: 2px;
+    }
+    .feature-text strong { color: var(--white); font-size: .9rem; display: block; margin-bottom: .2rem; }
+    .feature-text span { color: var(--gray); font-size: .82rem; }
+
+    .nosotros-visual {
+      position: relative;
+    }
+    .nosotros-box {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.15);
+      padding: 3rem;
+      position: relative;
+    }
+    .nosotros-box::before {
+      content: '"'; font-family: var(--ff-head); font-size: 8rem;
+      color: rgba(201,168,76,0.1); position: absolute; top: -1rem; left: 1.5rem;
+      line-height: 1;
+    }
+    .nosotros-quote {
+      font-family: var(--ff-head); font-size: 1.3rem; font-style: italic;
+      color: var(--cream); line-height: 1.5; margin-bottom: 1.5rem;
+    }
+    .nosotros-sig { font-size: .8rem; color: var(--gold); letter-spacing: .1em; text-transform: uppercase; }
+
+    .badge-25 {
+      position: absolute; top: -1.5rem; right: -1.5rem;
+      width: 90px; height: 90px; border-radius: 50%;
+      background: var(--gold); color: var(--navy);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      font-family: var(--ff-head); font-weight: 900;
+      box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+    }
+    .badge-25 .big { font-size: 1.8rem; line-height: 1; }
+    .badge-25 .small { font-size: .55rem; text-align: center; letter-spacing: .05em; line-height: 1.2; }
+
+    /* ── PROCESO ── */
+    #proceso { background: var(--navy); }
+
+    .proceso-steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0;
+      position: relative;
+      border: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .paso {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(201,168,76,0.1);
+      position: relative;
+    }
+    .paso:last-child { border-right: none; }
+
+    .paso-num {
+      font-family: var(--ff-head); font-size: 3.5rem; font-weight: 900;
+      color: rgba(201,168,76,0.12); line-height: 1; margin-bottom: .8rem;
+    }
+    .paso h4 { font-size: .9rem; font-weight: 500; color: var(--white); margin-bottom: .5rem; }
+    .paso p { font-size: .82rem; color: var(--gray); line-height: 1.5; }
+
+    /* ── CERTIFICADO ENERGÉTICO HIGHLIGHT ── */
+    #certificado {
+      background: linear-gradient(135deg, var(--navy2) 0%, rgba(22,40,64,0.6) 100%);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+
+    .cert-labels {
+      display: flex; flex-direction: column; gap: .5rem;
+    }
+
+    .cert-bar {
+      display: flex; align-items: center; gap: .8rem;
+      padding: .6rem 1rem; border-radius: 2px;
+      font-weight: 500; font-size: .9rem;
+    }
+    .cert-bar .letra { font-family: var(--ff-head); font-size: 1.1rem; font-weight: 900; width: 1.5rem; }
+    .cert-bar .arrow { margin-left: auto; font-size: .7rem; }
+
+    .cert-A { background: #1a7a3f; color: white; }
+    .cert-B { background: #4caf50; color: white; }
+    .cert-C { background: #8bc34a; color: #111; }
+    .cert-D { background: #ffc107; color: #111; }
+    .cert-E { background: #ff9800; color: white; }
+    .cert-F { background: #f44336; color: white; }
+    .cert-G { background: #b71c1c; color: white; }
+
+    .cert-text .section-eyebrow { margin-bottom: 1rem; }
+
+    .cert-includes {
+      margin-top: 2rem; display: flex; flex-direction: column; gap: .8rem;
+    }
+    .cert-include-item {
+      display: flex; gap: .8rem; align-items: center;
+      font-size: .88rem; color: var(--gray);
+    }
+    .cert-include-item::before {
+      content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0;
+    }
+
+    /* ── CONTACTO ── */
+    #contacto { background: var(--navy2); }
+
+    .contacto-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start;
+    }
+
+    .contacto-info h3 {
+      font-family: var(--ff-head); font-size: 1.6rem;
+      color: var(--white); margin-bottom: 1rem;
+    }
+    .contacto-info p { color: var(--gray); font-size: .9rem; line-height: 1.7; margin-bottom: 2rem; }
+
+    .contacto-items { display: flex; flex-direction: column; gap: 1.2rem; }
+    .contacto-item {
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .contacto-item-icon {
+      font-size: 1.1rem; width: 38px; height: 38px;
+      border: 1px solid rgba(201,168,76,0.25);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; background: rgba(201,168,76,0.06);
+    }
+    .contacto-item-text strong { display: block; color: var(--cream); font-size: .85rem; margin-bottom: .15rem; }
+    .contacto-item-text a { color: var(--gold); text-decoration: none; font-size: .9rem; }
+    .contacto-item-text span { color: var(--gray); font-size: .85rem; }
+
+    .whatsapp-btn {
+      margin-top: 2rem; display: inline-flex; align-items: center; gap: .7rem;
+      background: #25D366; color: white;
+      padding: .85rem 1.8rem; border-radius: 2px;
+      font-weight: 500; font-size: .9rem; text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .whatsapp-btn:hover { background: #1ebe57; transform: translateY(-2px); }
+
+    /* Form */
+    .contacto-form { display: flex; flex-direction: column; gap: 1rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: .4rem; }
+    .form-group label { font-size: .75rem; color: var(--gray); letter-spacing: .08em; text-transform: uppercase; }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--cream); padding: .75rem 1rem;
+      font-family: var(--ff-body); font-size: .9rem;
+      border-radius: 2px; outline: none;
+      transition: border-color .2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+
+    .form-group select option { background: var(--navy2); }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-submit {
+      background: var(--gold); color: var(--navy);
+      border: none; padding: .9rem 2rem;
+      font-family: var(--ff-body); font-weight: 500; font-size: .9rem;
+      letter-spacing: .08em; text-transform: uppercase;
+      cursor: pointer; border-radius: 2px;
+      transition: background .2s, transform .15s;
+      align-self: flex-start;
+    }
+    .form-submit:hover { background: var(--gold2); transform: translateY(-2px); }
+
+    .form-note { font-size: .75rem; color: var(--gray); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #080f17;
+      padding: 3rem 4% 2rem;
+      border-top: 1px solid rgba(201,168,76,0.1);
+    }
+    .footer-inner {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem;
+    }
+    .footer-brand .logo-main { font-size: 1rem; }
+    .footer-brand p { color: var(--gray); font-size: .8rem; margin-top: .5rem; max-width: 260px; line-height: 1.5; }
+
+    .footer-links { display: flex; flex-direction: column; gap: .5rem; }
+    .footer-links a { color: var(--gray); text-decoration: none; font-size: .82rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem;
+      font-size: .75rem; color: var(--gray);
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 900px) {
+      nav { display: none; }
+      nav.open { display: flex; flex-direction: column; position: fixed; top: 70px; left: 0; right: 0; background: var(--navy); padding: 2rem; gap: 1.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+      .hamburger { display: flex; }
+
+      #nosotros, #certificado, .contacto-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .badge-25 { display: none; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+      .paso { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.1); }
+      .paso:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <span class="logo-main">Ingeniería y Topografía Martí</span>
+    <span class="logo-sub">Castellón · Valencia</span>
+  </div>
+  <nav id="main-nav">
+    <a href="#servicios">Servicios</a>
+    <a href="#certificado">Certificados</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#contacto" class="btn-nav">Presupuesto</a>
+  </nav>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-circle"></div>
+
+  <div class="hero-content reveal">
+    <div class="hero-eyebrow">Ingeniería · Topografía</div>
+    <h1>
+      Soluciones técnicas precisas para <em>Castellón</em> y Valencia
+    </h1>
+    <p class="hero-desc">
+      Más de 25 años de experiencia en topografía e ingeniería. Levantamientos, deslindes, certificados energéticos, validación gráfica catastral e informes técnicos. Profesionales colegiados en Moncofa.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contacto" class="btn-primary">Solicitar presupuesto</a>
+      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+    </div>
+  </div>
+
+  <div class="hero-stats reveal">
+    <div>
+      <div class="stat-num">+25</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div>
+      <div class="stat-num">48h</div>
+      <div class="stat-label">Entrega trabajos estándar</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Profesionales colegiados</div>
+    </div>
+    <div>
+      <div class="stat-num">2</div>
+      <div class="stat-label">Provincias de cobertura</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-eyebrow reveal">Qué hacemos</div>
+  <h2 class="reveal">Servicios de ingeniería y topografía<br>en Castellón y Valencia</h2>
+  <p class="section-intro reveal">
+    Ofrecemos soluciones técnicas completas para particulares, inmobiliarias, constructoras y administraciones. Entrega rápida, precios transparentes y atención personalizada.
+  </p>
+
+  <div class="services-grid reveal">
+
+    <div class="service-card">
+      <span class="service-icon">📐</span>
+      <h3>Informes técnicos de ingeniería</h3>
+      <p>Informes periciales, inspecciones técnicas, certificaciones de obra, ITE y documentación técnica para cualquier finalidad: legal, administrativa o particular.</p>
+      <a href="#contacto" class="service-detail">Solicitar informe</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Valencia</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🗺️</span>
+      <h3>Validación gráfica y RGA catastral</h3>
+      <p>Tramitación completa de Representación Gráfica Alternativa y Validación Gráfica Alternativa para coordinación Catastro-Registro. Imprescindible en compraventas, herencias y rectificaciones.</p>
+      <a href="#contacto" class="service-detail">Consultar proceso</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Moncofa</span>
+        <span class="zone-tag">Nules</span>
+        <span class="zone-tag">Castellón</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">📏</span>
+      <h3>Topografía y deslindes</h3>
+      <p>Levantamientos topográficos, delimitación de linderos, segregaciones, agrupaciones y georreferenciación de parcelas. Equipos GNSS RTK, Estación Total y dron UAV.</p>
+      <a href="#contacto" class="service-detail">Pedir presupuesto</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Sagunto</span>
+        <span class="zone-tag">Segorbe</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🏠</span>
+      <h3>Certificados de eficiencia energética</h3>
+      <p>Certificado energético para viviendas, locales y oficinas con visita in situ, cálculo con software reconocido y entrega de certificado + etiqueta A-G. Registro autonómico incluido si se desea.</p>
+      <a href="#certificado" class="service-detail">Ver más detalles</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Moncofa</span>
+        <span class="zone-tag">Nules</span>
+        <span class="zone-tag">Vall d'Uixó</span>
+        <span class="zone-tag">Burriana</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🚁</span>
+      <h3>Topografía con dron y escáner 3D</h3>
+      <p>Fotogrametría UAV, escáner terrestre, ortofoto y nubes de puntos. Entregables BIM/IFC, DWG/DXF y gemelo digital. Ideal para grandes superficies y proyectos de obra civil.</p>
+      <a href="#contacto" class="service-detail">Solicitar info</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Valencia</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🏗️</span>
+      <h3>Replanteos y obra civil</h3>
+      <p>Replanteo de ejes, rasantes, firmes y redes. Certificaciones as-built y seguimiento de obra. Coordinación con dirección de obra y empresa constructora.</p>
+      <a href="#contacto" class="service-detail">Pedir presupuesto</a>
+      <div class="zone-tags">
+        <span class="zone-tag">Castellón</span>
+        <span class="zone-tag">Castellón</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COBERTURA GEOGRÁFICA -->
+<section id="cobertura">
+  <div class="section-eyebrow reveal">Zona de actuación</div>
+  <h2 class="reveal">¿Trabajáis en mi municipio?</h2>
+  <p class="section-intro reveal" style="margin: 0 auto 3rem; text-align: center;">
+    Operamos en toda la provincia de Castellón y norte de Valencia. Estos son los municipios donde actuamos habitualmente:
+  </p>
+  <div class="cobertura-grid reveal">
+    <span class="cobertura-item principal">Moncofa</span>
+    <span class="cobertura-item principal">Nules</span>
+    <span class="cobertura-item principal">Castellón de la Plana</span>
+    <span class="cobertura-item">La Vall d'Uixó</span>
+    <span class="cobertura-item">Burriana</span>
+    <span class="cobertura-item">Villarreal</span>
+    <span class="cobertura-item">Xilxes</span>
+    <span class="cobertura-item">Almenara</span>
+    <span class="cobertura-item">Sagunto</span>
+    <span class="cobertura-item">Segorbe</span>
+    <span class="cobertura-item">Onda</span>
+    <span class="cobertura-item">Betxí</span>
+    <span class="cobertura-item">La Llosa</span>
+    <span class="cobertura-item">Benicàssim</span>
+    <span class="cobertura-item">Oropesa del Mar</span>
+  </div>
+  <p style="color: var(--gray); font-size: .85rem; margin-top: 1.5rem;">¿No ves tu municipio? Consúltanos — trabajamos en toda la Comunitat Valenciana.</p>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="nosotros-text reveal">
+    <div class="section-eyebrow">Quiénes somos</div>
+    <h2>Ingenieros colegiados con más de 25 años de experiencia</h2>
+    <p class="nosotros-body">
+      Ingeniería y Topografía Martí está formado por un ingeniero de caminos, canales y puertos y un ingeniero agrónomo y topógrafo, ambos colegiados y con una trayectoria consolidada en la Comunitat Valenciana.
+      <br><br>
+      Nuestra especialización en trabajos técnicos accesibles —certificados energéticos, informes técnicos, validaciones catastrales— nos permite ofrecer un servicio ágil, preciso y con entrega garantizada en 48-72 horas en trabajos estándar.
+    </p>
+    <div class="nosotros-features">
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-text">
+          <strong>Entrega rápida</strong>
+          <span>48-72h en trabajos estándar desde la visita o encargo</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📋</div>
+        <div class="feature-text">
+          <strong>Documentación completa</strong>
+          <span>Planos firmados, certificados, GML, PDF y formatos DWG/DXF</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤝</div>
+        <div class="feature-text">
+          <strong>Trato directo y personalizado</strong>
+          <span>Hablas siempre con el profesional que ejecuta tu trabajo</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📍</div>
+        <div class="feature-text">
+          <strong>Presencia local en Castellón</strong>
+          <span>Conocemos el territorio: Catastro, Registro y organismos locales</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nosotros-visual reveal">
+    <div class="nosotros-box">
+      <div class="badge-25">
+        <span class="big">+25</span>
+        <span class="small">años de<br>experiencia</span>
+      </div>
+      <p class="nosotros-quote">
+        "Cada proyecto, por pequeño que sea, merece la misma precisión técnica y la misma dedicación."
+      </p>
+      <div class="nosotros-sig">— Ingeniería y Topografía Martí</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <div class="section-eyebrow reveal">Cómo trabajamos</div>
+  <h2 class="reveal">Proceso simple y transparente</h2>
+  <p class="section-intro reveal">Sin sorpresas. Sabéis en todo momento qué está pasando con vuestro encargo.</p>
+
+  <div class="proceso-steps reveal">
+    <div class="paso">
+      <div class="paso-num">01</div>
+      <h4>Consulta y presupuesto</h4>
+      <p>Nos explicas tu necesidad por teléfono, WhatsApp o formulario. Te damos presupuesto sin compromiso en el mismo día.</p>
+    </div>
+    <div class="paso">
+      <div class="paso-num">02</div>
+      <h4>Visita o recepción de datos</h4>
+      <p>Si el trabajo lo requiere, concertamos visita. Para muchos encargos es suficiente la referencia catastral y la dirección.</p>
+    </div>
+    <div class="paso">
+      <div class="paso-num">03</div>
+      <h4>Ejecución técnica</h4>
+      <p>Realizamos el trabajo con los equipos y software adecuados. Plazos cumplidos: 48-72h en trabajos estándar.</p>
+    </div>
+    <div class="paso">
+      <div class="paso-num">04</div>
+      <h4>Entrega y tramitación</h4>
+      <p>Te entregamos toda la documentación firmada. Si necesitas tramitación (Catastro, Registro, IVACE) nos encargamos nosotros.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICADO ENERGÉTICO DETALLE -->
+<section id="certificado">
+  <div class="cert-text reveal">
+    <div class="section-eyebrow">Obligatorio en ventas y alquileres</div>
+    <h2>Certificado de eficiencia energética en Castellón</h2>
+    <p style="color: var(--gray); font-size: .95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+      Si vas a vender o alquilar un inmueble en Castellón, Moncofa, Nules o cualquier municipio de Castellón y Valencia, el certificado energético es <strong style="color: var(--cream);">obligatorio por ley</strong>. Sin él no puedes anunciar la propiedad en portales inmobiliarios.
+    </p>
+    <div class="cert-includes">
+      <div class="cert-include-item">Visita in situ para toma de datos de envolvente e instalaciones</div>
+      <div class="cert-include-item">Cálculo con software homologado por el Ministerio</div>
+      <div class="cert-include-item">Certificado + etiqueta energética A-G en PDF firmado</div>
+      <div class="cert-include-item">Asesoramiento de mejoras para subir la calificación</div>
+      <div class="cert-include-item">Registro autonómico en IVACE (Comunitat Valenciana) — opcional</div>
+      <div class="cert-include-item">Plazo habitual: 24-72h desde la visita</div>
+    </div>
+    <br>
+    <a href="https://wa.me/34639333493?text=Hola%2C%20quiero%20un%20certificado%20energ%C3%A9tico" class="btn-primary">Pedir certificado por WhatsApp</a>
+  </div>
+
+  <div class="cert-labels reveal">
+    <div class="cert-bar cert-A"><span class="letra">A</span> Muy alta eficiencia <span class="arrow">▶▶▶▶▶▶▶</span></div>
+    <div class="cert-bar cert-B"><span class="letra">B</span> Alta eficiencia <span class="arrow">▶▶▶▶▶▶</span></div>
+    <div class="cert-bar cert-C"><span class="letra">C</span> Buena eficiencia <span class="arrow">▶▶▶▶▶</span></div>
+    <div class="cert-bar cert-D"><span class="letra">D</span> Eficiencia media <span class="arrow">▶▶▶▶</span></div>
+    <div class="cert-bar cert-E"><span class="letra">E</span> Eficiencia baja <span class="arrow">▶▶▶</span></div>
+    <div class="cert-bar cert-F"><span class="letra">F</span> Baja eficiencia <span class="arrow">▶▶</span></div>
+    <div class="cert-bar cert-G"><span class="letra">G</span> Muy baja eficiencia <span class="arrow">▶</span></div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-eyebrow reveal">Contactar</div>
+  <h2 class="reveal">Solicita presupuesto sin compromiso</h2>
+  <div class="contacto-grid">
+
+    <div class="contacto-info reveal">
+      <h3>Hablemos de tu proyecto</h3>
+      <p>Cuéntanos qué necesitas y te damos respuesta el mismo día. Atendemos por teléfono, WhatsApp o formulario.</p>
+
+      <div class="contacto-items">
+        <div class="contacto-item">
+          <div class="contacto-item-icon">📞</div>
+          <div class="contacto-item-text">
+            <strong>Teléfono</strong>
+            <a href="tel:+34639333493">639 333 493</a>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-item-icon">✉️</div>
+          <div class="contacto-item-text">
+            <strong>Email</strong>
+            <a href="mailto:jmartimarti@telefonica.net">jmartimarti@telefonica.net</a>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-item-icon">📍</div>
+          <div class="contacto-item-text">
+            <strong>Zona de trabajo</strong>
+            <span>Castellón · Valencia</span>
+          </div>
+        </div>
+        <div class="contacto-item">
+          <div class="contacto-item-icon">🕐</div>
+          <div class="contacto-item-text">
+            <strong>Horario</strong>
+            <span>Lunes a Viernes, 9:00 – 19:00</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/34639333493?text=Hola%2C%20me%20interesa%20un%20presupuesto" class="whatsapp-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+
+    <form class="contacto-form reveal" onsubmit="handleForm(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre *</label>
+          <input type="text" id="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono *</label>
+          <input type="tel" id="telefono" placeholder="600 000 000" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="tu@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="servicio">Servicio que necesitas</label>
+        <select id="servicio">
+          <option value="">Selecciona un servicio...</option>
+          <option>Informe técnico de ingeniería</option>
+          <option>Validación gráfica / RGA catastral</option>
+          <option>Levantamiento topográfico</option>
+          <option>Deslinde o replanteo</option>
+          <option>Certificado de eficiencia energética</option>
+          <option>Topografía con dron</option>
+          <option>Otro / No sé cuál necesito</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="municipio">Municipio del inmueble / obra</label>
+        <input type="text" id="municipio" placeholder="Ej: Nules, Moncofa, Castellón..." />
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Cuéntanos más</label>
+        <textarea id="mensaje" placeholder="Describe brevemente qué necesitas. Si tienes referencia catastral, inclúyela."></textarea>
+      </div>
+      <p class="form-note">* Campos obligatorios. Respuesta en menos de 24h en días laborables.</p>
+      <button type="submit" class="form-submit">Enviar solicitud</button>
+      <div id="form-success" style="display:none; color: var(--gold); font-size: .9rem; padding: .8rem; border: 1px solid rgba(201,168,76,0.3);">
+        ✓ Mensaje recibido. Te contactaremos en menos de 24h.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-main">Ingeniería y Topografía Martí</span>
+        <span class="logo-sub">Castellón · Valencia</span>
+      </div>
+      <p>Más de 25 años de experiencia al servicio de particulares, inmobiliarias y empresas en la Comunitat Valenciana.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#certificado">Certificados energéticos</a>
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#cobertura">Zona de cobertura</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+34639333493">📞 639 333 493</a>
+      <a href="mailto:jmartimarti@telefonica.net">✉️ jmartimarti@telefonica.net</a>
+      <a href="https://wa.me/34639333493">💬 WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Ingeniería y Topografía Martí — Todos los derechos reservados</span>
+    <span>Topógrafo e ingeniero en Castellón y Valencia</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) { el.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Mobile menu
+  function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+  }
+
+  // Form (demo — conectar con Formspree o similar)
+  function handleForm(e) {
+    e.preventDefault();
+    document.getElementById('form-success').style.display = 'block';
+    e.target.reset();
+    // Para activar: reemplaza el action del form con tu endpoint de Formspree
+    // <form action="https://formspree.io/f/XXXXXXX" method="POST">
+  }
+
+  // Header shrink on scroll
+  window.addEventListener('scroll', () => {
+    const h = document.querySelector('header');
+    h.style.padding = window.scrollY > 80 ? '.8rem 4%' : '1.2rem 4%';
+  });
+</script>
 </body>
 </html>
-
-
